@@ -35,7 +35,13 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(45deg, var(--dark-color), var(--primary-color));
+  background: linear-gradient(
+    45deg,
+    var(--dark-color) 0%,  
+    #2C5F8B 30%,               
+    var(--primary-color) 70%,   
+    #8ECAE6 100%              
+  );
   color: white;
   position: relative;
   overflow: hidden;
@@ -51,8 +57,13 @@ a:hover {
 .hero-content h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  color: #e6f4ff; 
+  text-shadow: 
+    2px 2px 4px rgba(0, 46, 97, 0.5), 
+    0 0 20px rgba(142, 202, 230, 0.3); 
   animation: float 3s ease-in-out infinite;
+  letter-spacing: -0.03em; 
+  -webkit-text-stroke: 0.5px #8ECAE6; 
 }
 
 .profile-image {
